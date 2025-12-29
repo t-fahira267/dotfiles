@@ -21,7 +21,7 @@
     "emmet.includeLanguages": {
         "erb": "html"
     },
-    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.showSuggestionsAsSnippets": false,
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDelete": false,
     "files.exclude": {
@@ -56,11 +56,10 @@
         "**/tmp/**": true,
         "**/vendor/**": true
     },
-    "git.enabled": false,
     "notebook.diff.ignoreMetadata": true,
     "notebook.lineNumbers": "on",
     "notebook.markup.fontSize": 13,
-    "python.defaultInterpreterPath": "~/.pyenv/shims/python",
+    "python.defaultInterpreterPath": "/Users/tashafahira/.pyenv/versions/3.12.9/envs/lewagon",
     "python.formatting.provider": "yapf",
     "python.languageServer": "Pylance",
     "python.linting.enabled": false,
@@ -84,4 +83,13 @@
     "workbench.settings.useSplitJSON": true,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.panel.defaultLocation": "right",
+    "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+    },
+    "git.confirmSync": false,
+    "jupyter.askForKernelRestart": false,
+    "chat.disableAIFeatures": true,
 }

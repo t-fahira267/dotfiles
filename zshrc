@@ -1,3 +1,6 @@
+source /usr/local/share/google-cloud-sdk/completion.zsh.inc
+source /usr/local/share/google-cloud-sdk/path.zsh.inc
+
 ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
@@ -70,3 +73,12 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/usr/local/share/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/share/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/usr/local/share/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/share/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Python Path activation for Decision Science olist project
+export PYTHONPATH="/Users/tashafahira/code/t-fahira267/03-Decision-Science:$PYTHONPATH"
